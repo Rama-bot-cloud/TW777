@@ -675,28 +675,6 @@ loadstring(game:HttpGet("https://pastebin.com/raw/qXJaDGr2", true))()
   	end    
 })
 Rtx:AddLabel("   Shadows")
-Tab:AddToggle({
-	Name = "Shadow Lighting",
-	Default = false,
-	Callback = function(Value)
-while Value do
-        for i,v in pairs(workspace:GetDescendants()) do
-            if v:IsA("SpotLight") or v:IsA("SurfaceLight") or v:IsA("PointLight") then
-                v.Shadows = true
-            end
-        end
-        task.wait(5)
-      end
-	end    
-})
-
-Rtx:AddToggle({
-	Name = "Global Shadow",
-	Default = false,
-	Callback = function(Value)
-game.Lighting.GlobalShadows = Value
-	end    
-})
 Rtx:AddLabel("   Remover")
 Rtx:AddButton({
 	Name = "Remove Reflection",
