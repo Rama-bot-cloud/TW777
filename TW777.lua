@@ -10,6 +10,7 @@ local player = game.Players.LocalPlayer
 -- GameName
 local gameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 
+
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/notification_gui_library.lua", true))()
 -----
 --ScsL Adalah Singkatanya SuccesLoader
@@ -28,13 +29,13 @@ local playerName = player.Name
 
 local Main = Window:MakeTab({
 	Name = "Main",
-	Icon = "rbxassetid://8834748103",
+	Icon = "rbxassetid://7733960981",
 	PremiumOnly = false
 })
 
 local Script = Window:MakeTab({
     Name = "Script",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://7733924046",
     PremiumOnly = false
 })
 
@@ -45,27 +46,27 @@ local Animation = Window:MakeTab({
 })
 local Hub = Window:MakeTab({
     Name = "Hub",
-    Icon = "rbxassetid://14655180585",
+    Icon = "rbxassetid://7734053426",
     PremiumOnly = false
 })
 local Rtx = Window:MakeTab({
     Name = "Rtx",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://7733658133",
     PremiumOnly = false
 })
 local Admin = Window:MakeTab({
     Name = "Admin",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://7734042493",
     PremiumOnly = false
 })
 local Setting = Window:MakeTab({
     Name = "Setting",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://8997386997",
     PremiumOnly = false
 })
 local Credits = Window:MakeTab({
     Name = "Credits",
-    Icon = "rbxassetid://4483345998",
+    Icon = "rbxassetid://7734068321",
     PremiumOnly = false
 })
 
@@ -91,6 +92,19 @@ Script:AddButton({
 	Name = "Fe Invisible Toggle",
 	Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/LiverMods/raw/main/Invisible'))()
+      		ScsL()
+  	end    
+})
+Script:AddButton({
+	Name = "Fe HeadHitbox {By YxoSc}",
+	Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/YxoSc/head/main/Head", true))()      		ScsL()
+  	end    
+})
+Script:AddButton({
+	Name = "Fe HeadHitbox {By MonkeyHub}",
+	Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/MonkeyHUBB/MonkeyHUB_StreetzWar/main/README.md"))()
       		ScsL()
   	end    
 })
@@ -440,6 +454,20 @@ Animation:AddButton({
   	end    
 })
 Animation:AddButton({
+  Name = "Fe Animation Energize R6-R15",
+  Callback = function()
+      loadstring(game:HttpGet(('https://pastebin.com/raw/1p6xnBNf'),true))()
+          ScsL()
+    end    
+})
+Animation:AddButton({
+	Name = "Fe Animation Gui R6 Only",
+	Callback = function()
+	    loadstring(game:HttpGet("https://pastebin.com/raw/mDg1nVAC"))() 		ScsL()
+  	end    
+})
+
+Animation:AddButton({
 	Name = "Fe CostumSit",
 	Callback = function()
 	    loadstring(game:HttpGet(('https://pastefy.app/XKxQtK2K/raw'),true))()
@@ -471,9 +499,9 @@ Hub:AddButton({
 })
 
 Hub:AddButton({
-	Name = "SussyHub",
+	Name = "PendulumHub",
 	Callback = function()
-	    
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
       		ScsL()
   	end    
 })
