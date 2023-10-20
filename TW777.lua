@@ -1,21 +1,6 @@
 local TW777 = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = TW777:MakeWindow({Name = "TW777 V0.2", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
-local function SetLightingEngine(yes)
-    local scs, _ = pcall(function()
-        if type(yes) == "string" then
-            sethiddenproperty(game.Lighting, "Technology", yes)
-        end
-    end)
-    task.wait()
-    if not scs then
-        game:GetService("StarterGui"):SetCore("SendNotification",{
-                Title = "Error", -- Required
-                Text = "Error: Exploit does not supported function sethiddenproperty.", -- Required
-            })
-        
-    end
-end
 
 
 
@@ -593,112 +578,6 @@ Rtx:AddButton({
 	Name = "Rtx {Unknow}",
 	Callback = function()
 	    loadstring(game:HttpGet("https://pastebin.com/raw/8xTuSJR5"))() 
-      		ScsL()
-  	end    
-})
-
-Rtx:AddLabel("Rtx By AZY {But I modified}")
-Rtx:AddLabel("Remember ||Its Not By Me||")
-
-Rtx:AddButton({
-	Name = "Rtx Morning",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/dPVTcisg", true))()
-      		ScsL()
-  	end    
-})
-Rtx:AddButton({
-	Name = "Rtx AfterNoon",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/rmkb1MCj", true))()
-      		ScsL()
-  	end    
-})
-Rtx:AddButton({
-	Name = "Rtx Evening",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/kWVdd4wE", true))()
-      		ScsL()
-  	end    
-})
-Rtx:AddButton({
-	Name = "Rtx Night",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/895Eei6u", true))()
-      		ScsL()
-  	end    
-})
-Rtx:AddLabel("Lighting Engine")
-Rtx:AddButton({
-	Name = "Legacy",
-	Callback = function()
-SetLightingEngine("Legacy")
-      		ScsL()
-  	end    
-})
-Rtx:AddButton({
-	Name = "Voxel",
-	Callback = function()
-SetLightingEngine("Voxel")
-      		ScsL()
-  	end    
-})
-Rtx:AddButton({
-	Name = "Compatibility",
-	Callback = function()
-SetLightingEngine("Compatibility")
-      		ScsL()
-  	end    
-})
-Rtx:AddButton({
-	Name = "ShadowMap",
-	Callback = function()
-SetLightingEngine("ShadowMap")
-      		ScsL()
-  	end    
-})
-Rtx:AddButton({
-	Name = "Future",
-	Callback = function()
-      SetLightingEngine("Future")
-      		ScsL()
-  	end    
-})
-
-Rtx:AddLabel("   Materials")
-
-Rtx:AddButton({
-	Name = "Reflection",
-	Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/qXJaDGr2", true))()
-      		ScsL()
-  	end    
-})
-Rtx:AddLabel("   Shadows")
-Rtx:AddLabel("   Remover")
-Rtx:AddButton({
-	Name = "Remove Reflection",
-	Callback = function()
-for i,v in pairs(workspace:GetDescendants()) do
-        if v:IsA("Part") or v:IsA("UnionOperation") then
-            if not v.Parent:FindFirstChild("Humanoid") then
-                pcall(function()
-                    if v.Reflectance > 0 then
-                        v.Reflectance = 0
-                    end
-                end)
-            end
-        end
-      end
-      		ScsL()
-  	end    
-})
-Rtx:AddButton({
-	Name = "Clear All Lighting",
-	Callback = function()
-for i,v in pairs(game.Lighting:GetChildren()) do
-        v:Destroy()
-      end
       		ScsL()
   	end    
 })
